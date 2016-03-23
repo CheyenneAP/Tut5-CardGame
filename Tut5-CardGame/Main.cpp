@@ -42,7 +42,7 @@ int main(){
 
 
 	cout << "_______________________________________________________________________________" << endl;
-	// invalid entries
+	// test to cater for an  invalid entry
 	Card cardobj2(1002, "Aqua");
 	cout << endl;
 
