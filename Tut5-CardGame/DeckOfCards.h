@@ -1,6 +1,12 @@
 #pragma once
-class DeckOfCards
-{
+#include "Card.h"
+class DeckOfCards{
+
+private:
+
+	int TotCardAmt = 20;
+	Card *cardSet;
+
 public:
 	DeckOfCards();
 	~DeckOfCards();
