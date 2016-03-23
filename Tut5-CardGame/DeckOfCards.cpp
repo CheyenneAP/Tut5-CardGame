@@ -29,3 +29,19 @@ DeckOfCards::DeckOfCards(){
 
 //destructor
 DeckOfCards::~DeckOfCards(){ cardSet = 0; }
+
+
+
+// displays the deck of cards
+void DeckOfCards::display(){
+
+	for (int i = 0; i < TotCardAmt; i++){
+		cardSet[i].print();
+		cout << endl;
+	}
+}
+
+
+
+// resets the deck of cards
+DeckOfCards DeckOfCards::reset(){ return DeckOfCards(); }

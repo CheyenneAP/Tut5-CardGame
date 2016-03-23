@@ -10,4 +10,7 @@ private:
 public:
 	DeckOfCards();
 	~DeckOfCards();
+	void display();
+	DeckOfCards reset();
+
 };
