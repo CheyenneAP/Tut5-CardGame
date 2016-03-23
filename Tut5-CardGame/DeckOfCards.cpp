@@ -77,3 +77,29 @@ void DeckOfCards::shuffle() {
 
 }
 // end shuffle
+
+
+// draws a card
+Card DeckOfCards::draw(){
+	// displays card
+
+	if (TotCardAmt != 0) {
+		cardSet[TotCardAmt - 1].print();
+		//Decrement card count
+		TotCardAmt -= 1;
+		//shows you the card drawn
+		return cardSet[TotCardAmt];
+		// pulls card from the  deck
+		delete &cardSet[TotCardAmt];
+	}
+
+	else{
+		cout << " There are no more cards to draw" << endl;
+	}
+}
+
+//lets you peek at the card at the top of the deck without removing it 
+Card DeckOfCards::peek(){
+	cardSet[TotCardAmt - 1].print();
+	return cardSet[TotCardAmt - 1];
+}

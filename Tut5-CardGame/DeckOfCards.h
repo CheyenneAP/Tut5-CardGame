@@ -13,5 +13,7 @@ public:
 	void display();
 	DeckOfCards reset();
 	void shuffle();
+	Card draw();
+	Card peek();
 
 };
