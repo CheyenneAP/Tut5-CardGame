@@ -52,4 +52,18 @@ int main(){
 	//dmkr->display();
 	cout << "_________________________________________________________________________________" << endl;
 
+
+	// draw a card 
+	cout << "You have drawn : ";
+	dmkr->draw();
+	cout << endl;
+	dmkr->display();
+	cout << endl;
+
+	// tells you how many cards are in the deck once you have drawn a card 
+	cout << "Number of cards after the draw: " << dmkr->numberOfCards() << endl;
+	cout << endl;
+
+
+
 }
