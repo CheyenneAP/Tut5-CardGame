@@ -2,7 +2,7 @@
 #include "Card.h"
 #include <iostream>
 using namespace std;
-
+#include <ctime>
 
 // initialise the deck of cards in the contructor
 DeckOfCards::DeckOfCards(){
@@ -45,3 +45,35 @@ void DeckOfCards::display(){
 
 // resets the deck of cards
 DeckOfCards DeckOfCards::reset(){ return DeckOfCards(); }
+//end reset
+
+//picks two random cards and switches their order repeats this 50 times 
+void DeckOfCards::shuffle() {
+	srand(time(NULL));
+	// variable to swop
+	Card tempvar;
+	if (TotCardAmt >= 2){
+
+
+		int randA, randB;
+		for (int i = 0; i < 50; i++){
+
+			randA = rand() % TotCardAmt;
+			randB = rand() % TotCardAmt;
+
+
+			// swap with different index
+			if (randA != randB) {
+
+				tempvar = cardSet[randA];
+				cardSet[randA] = cardSet[randB];
+				cardSet[randB] = tempvar;
+			}
+		}
+	}
+	else{
+		cout << "Too little to shuffle" << endl;
+	}
+
+}
+// end shuffle

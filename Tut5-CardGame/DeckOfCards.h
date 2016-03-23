@@ -12,5 +12,6 @@ public:
 	~DeckOfCards();
 	void display();
 	DeckOfCards reset();
+	void shuffle();
 
 };
