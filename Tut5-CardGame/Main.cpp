@@ -32,3 +32,10 @@ int main(){
 	cout<< dmkr->numberOfCards() << endl;
 
 	cout << "_________________________________________________________________________________" << endl;
+
+	//c.testing functionality
+	Card cardobj1(5, "Black");
+	cout << "You have chosen ";
+	cout << cardobj1.number() << " of " << cardobj1.colour() << " 's" << " this means your :" << endl;
+	cardobj1.print();
+	cout << endl;
