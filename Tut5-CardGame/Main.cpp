@@ -29,7 +29,7 @@ int main(){
 	dmkr->display();
 	cout << endl;
 	cout << "The number of cards in deck: " << endl;
-	cout<< dmkr->numberOfCards() << endl;
+	cout << dmkr->numberOfCards() << endl;
 
 	cout << "_________________________________________________________________________________" << endl;
 
@@ -51,3 +51,5 @@ int main(){
 	dmkr->peek();
 	//dmkr->display();
 	cout << "_________________________________________________________________________________" << endl;
+
+}
