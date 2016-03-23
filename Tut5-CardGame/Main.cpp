@@ -39,3 +39,9 @@ int main(){
 	cout << cardobj1.number() << " of " << cardobj1.colour() << " 's" << " this means your :" << endl;
 	cardobj1.print();
 	cout << endl;
+
+
+	cout << "_______________________________________________________________________________" << endl;
+	// invalid entries
+	Card cardobj2(1002, "Aqua");
+	cout << endl;
