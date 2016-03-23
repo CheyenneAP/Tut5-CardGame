@@ -49,7 +49,6 @@ int main(){
 	// peek  at a card 
 	cout << "You peeked at:" << endl;
 	dmkr->peek();
-	//dmkr->display();
 	cout << "_________________________________________________________________________________" << endl;
 
 
