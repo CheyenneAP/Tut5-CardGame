@@ -2,11 +2,37 @@
 //214513360
 #include <iostream>
 #include "Card.h"
+#include <string>
+using namespace std;
 
-//default constructor
-Card::Card(){
 
+// default constructor
+Card::Card(){}
+
+
+// overloading 
+// a.each card has a number between one and 10  and a colour of either red or black,
+Card::Card(int inum, string icol){
+
+	// check boundary condition for numbers entered 
+	if (inum >= 1 && inum <= 10){
+		numbr = inum;
+	}
+	else{
+		cout << "Numbers range between 1 and 10" << endl;
+		cout << "You have entered an invalid number." << endl;
+	}
+
+	// check that the conditions for colour is only red or black
+	if (icol.compare("Red") == 0 || icol.compare("Black") == 0){
+		color = icol;
+	}
+	else{
+		cout << "You have entered an invalid colour." << endl;
+	}
 }
+//end
+
 
 //default destructor
 Card::~Card()
@@ -27,6 +53,5 @@ int Card::number(){
 
 // print method displays the card color and number.
 void Card::print(){
-	cout << "The colour of the card is: " << color << endl;
-	cout << "The number of the card is : " << numbr << endl;
+	cout << " Card Colour:" << color << "\t\t\t\t Card Number: " << numbr << endl;
 }

@@ -10,6 +10,7 @@ private:
 
 public:
 	Card();
+	Card(int, string);
 	~Card();
 	string colour();
 	int number();
