@@ -15,5 +15,5 @@ public:
 	void shuffle();
 	Card draw();
 	Card peek();
-
+	int numberOfCards();
 };

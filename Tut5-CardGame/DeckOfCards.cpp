@@ -103,3 +103,6 @@ Card DeckOfCards::peek(){
 	cardSet[TotCardAmt - 1].print();
 	return cardSet[TotCardAmt - 1];
 }
+
+// returns the number of cards in the deck
+int DeckOfCards::numberOfCards(){ return TotCardAmt; }
