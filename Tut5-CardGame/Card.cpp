@@ -4,10 +4,7 @@
 #include "Card.h"
 
 //default constructor
-Card::Card(int n,string c)
-{
-	numbr = n;
-	color = c;
+Card::Card(){
 
 }
 

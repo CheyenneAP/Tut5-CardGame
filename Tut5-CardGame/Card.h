@@ -9,10 +9,9 @@ private:
 	string color;
 
 public:
-	Card(int,string);
+	Card();
 	~Card();
 	string colour();
 	int number();
 	void print();
 };
-

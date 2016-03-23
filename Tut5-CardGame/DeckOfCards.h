@@ -5,4 +5,3 @@ public:
 	DeckOfCards();
 	~DeckOfCards();
 };
-
