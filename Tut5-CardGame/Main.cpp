@@ -21,3 +21,14 @@ int main(){
 	dmkr->display();
 
 	cout << "________________________________________________________________________________" << endl;
+
+
+
+	cout << "shuffle card outcome" << endl;
+	dmkr->shuffle();
+	dmkr->display();
+	cout << endl;
+	cout << "The number of cards in deck: " << endl;
+	cout<< dmkr->numberOfCards() << endl;
+
+	cout << "_________________________________________________________________________________" << endl;
